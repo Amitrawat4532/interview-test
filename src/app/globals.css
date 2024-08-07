@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 .bg-image{
-    background-image: url(../../public/bgimage.jpg);
+    background-image: url(../../public/bgimage.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+  .bg-one{
+    background-image: url(../../public/bg-one.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-two{
+    background-image: url(../../public/bg-two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-three{
+    background-image: url(../../public/bg-three.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -1,18 +1,18 @@
 const Navigation = [
     {
-        label:'Home',
+        label:'Shop',
         link:'#'
     },
     {
-        label:'Jobs',
+        label:'On Sale',
         link:'#'
     },
     {
-        label:'About us',
+        label:'New Arrivals',
         link:'#'
     },
     {
-        label:'Contact us',
+        label:'Brands',
         link:'#'
     },
 ]

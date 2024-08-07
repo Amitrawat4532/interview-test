@@ -1,77 +1,52 @@
 import Image from "next/image";
 import React from "react";
-import suitcase from "../../../public/suitcase.png";
+import stars from '../../../public/stars.svg'
+
 
 type Props = {};
 
 const Homepage = (props: Props) => {
   return (
-    <section className="bg-image flex justify-center items-center  w-full h-screen flex-col px-5 gap-10">
-      <div className="flex flex-col gap-10">
-        <div className="flex flex-col">
+    <section className="bg-image flex justify-center   w-full h-full py-[70px] sm:py-0 sm:h-[90vh] flex-col px-5 gap-10  overflow-hidden">
+      <div className="flex  gap-10  w-full  justify-center items-center">
+        <div className="flex flex-col gap-8 w-[1240px] relative  h-full">
+          <div className="absolute top-[-100px] right-[-160px] ">
+          <Image src={stars} height={50} width={100} alt='logo' />
 
-        <h1 className="text-white font-bold text-[30px] sm:text-[60px] text-center">
-          Find Your Dream Job Today!
+          </div>
+          <div className="absolute top-[100px] right-[400px] ">
+          <Image src={stars} height={50} width={50} alt='logo' />
+
+          </div>
+
+        <h1 className="text-black font-extrabold text-[36px] sm:text-[64px] leading-[36px] sm:leading-[64px]">
+        FIND CLOTHES<br/>THAT MATCHES <br/>YOUR STYLE
         </h1>
-        <h2 className="text-white font-bold text-[12px] sm:text-[20px] text-center">
-          Connecting Talent with Opportunity : Your Gateway to Success
+        <h2 className="text-gray-400 font-normal text-[12px] sm:text-[16px]">
+        Browse through our diverse range of meticulously crafted garments,<br/> designed to bring out your individuality and cater to your sense of style.
         </h2>
-        </div>
-        <div className="flex justify-center items-center flex-col">
-          {/* left  */}
-          <div className="bg-white flex  rounded-2xl gap-3 h-full flex-col sm:flex-row  w-full ">
-            <div className="flex gap-5 px-3 py-4 flex-col sm:flex-row ">
-              <input type="text" placeholder="Job Title Or Company" />
-              <select className="bg-white">
-                <option>Select Location</option>
-                <option>Dehradun</option>
-
-                <option>Delhi</option>
-
-                <option>Mumbai</option>
-              </select>
-
-              <select className="bg-white">
-                <option>Select Categories</option>
-                <option>Dehradun</option>
-
-                <option>Delhi</option>
-
-                <option>Mumbai</option>
-              </select>
-            </div>
-
-            <div className="bg-blue-400 flex h-full w-full justify-center items-center px-4 py-4 sm:rounded-r-2xl rounded-b-2xl sm:rounded-none">
-              Search Job
-            </div>
-          </div>
-          {/* right */}
+        <button className="bg-black rounded-3xl px-14 text-white py-4 w-full sm:max-w-[210px]">Shop Now</button>
+        <div className="flex w-full gap-5  flex-wrap sm:flex-row  justify-center sm:justify-start items-center">
+           <div className="flex border-r-[1px] border-gray-400 pr-8 sm:pr-8 flex-col  w-[40%] sm:w-[20%]">
+            <h3 className="text-[40px] font-bold">200+</h3>
+            <p className="text-[12px] sm:text-[16px]">International Brands</p>
+           </div>
+           <div className="flex  flex-col  sm:pr-8  px-2 sm:px-8  w-[40%] sm:w-[20%] justify-center sm:justify-start items-center">
+            <h3 className="text-[40px] font-bold">2,000+</h3>
+            <p className="text-[12px] sm:text-[16px]">High-Quality Products</p>
+           </div>
+           <div className="flex sm:border-l-[1px] sm:border-gray-400 px-2 sm:px-8 flex-col pr-8  w-[100%] justify-center sm:justify-start items-center sm:w-[20%]">
+            <h3 className="text-[40px] font-bold">30000+</h3>
+            <p className="text-[12px] sm:text-[16px]">Happy Customers</p>
+           </div>
         </div>
 
-        <div className="flex gap-[30px] flex-wrap sm:gap-[100px] w-full justify-center items-center ">
-          <div className="flex gap-3 justify-center items-center">
-            <Image src={suitcase} alt="suitcase" height={60} width={60} />
-            <div className="flex flex-col">
-              <span className="text-white">25,850</span>
-              <span className="text-white">jobs</span>
-            </div>
-          </div>
-          <div className="flex gap-3 justify-center items-center">
-            <Image src={suitcase} alt="suitcase" height={60} width={60} />
-            <div className="flex flex-col">
-              <span className="text-white">25,850</span>
-              <span className="text-white">jobs</span>
-            </div>
-          </div>
-          <div className="flex gap-3 justify-center items-center">
-            <Image src={suitcase} alt="suitcase" height={60} width={60} />
-            <div className="flex flex-col">
-              <span className="text-white">25,850</span>
-              <span className="text-white">jobs</span>
-            </div>
-          </div>
         </div>
+       
+
+   
       </div>
+      
     </section>
   );
 };
